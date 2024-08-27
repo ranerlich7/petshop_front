@@ -24,7 +24,7 @@
     <script>
       let myPets = [];
       // display.innerHTML = myPets.join('<BR>')
-      const HOST = "http://127.0.0.1:5000/pets/";
+      const HOST = "https://flask-pet-api.onrender.com/pets/";
       async function deleteDestination(destinationID) {
         const response = await axios.delete(`${HOST}/${destinationID}`);
         alert("delete succesfuly");
